@@ -1,0 +1,110 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+header {
+  max-width: 500px;
+  margin: 3em auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+h1.strng {
+  font-weight: 600;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1230px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  background-color: white;
+  padding: 30px;
+  width: 350px;
+  margin: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 5px;
+}
+.box:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.box h3{
+    margin: 0;
+
+}
+.box p{
+    font-size: 14px;
+    margin: 15px 0 30px ;
+}
+.box img{
+    display: block;
+    margin-left: auto;
+}
+
+.box.blue {
+    border-top: 3px solid hsl(212, 86%, 64%);
+
+}
+.box.cyan{
+    border-top: 3px solid hsl(180, 62%, 55%);
+
+}
+
+.box.orange {
+    border-top: 3px solid hsl(34, 97%, 64%);
+
+}
+
+.box.red {
+    border-top: 3px solid hsl(0, 78%, 62%);
+
+}
+
+.box-align{
+    transform: translateY(50%);
+}
+
+@media (max-width: 790px) {
+    .box-align{
+        transform: translateY(0);}
+}
+/* color 
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+
+
+*/
+/* attrib */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
